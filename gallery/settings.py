@@ -124,5 +124,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+# STATIC_ROOT = os.path.join(gallery_app,'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ("static/css")
+# STATICFILES_DIRS = (
+#                 os.path.join(gallery_app,'static'),
+# )
+# TEMPLATE_DIRS = (
+#                 os.path.join(gallery_app,'templates'),
+# )
+MEDIA_ROOT = os.path.join
