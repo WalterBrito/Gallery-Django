@@ -1,15 +1,26 @@
 {% load staticfiles %}
+{% load fontawesome %}
 <!DOCTYPE html>
 <html>
   <head>
     <!-- {% block title %}Gallery{% endblock %} -->
     <title>Gallery</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block meta-head %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock %}
+
+    {% block head-css %}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %}
+
+    {% block head-javascript %}
+      <script src="https://use.fontawesome.com/684da3bcd8.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock %}
 
   </head>
 
@@ -38,9 +49,9 @@
    {% endblock %}
 
     <div class="footer">
-      <i class="fa fa-twitter" aria-hidden="true" class="fa-2x" target="_blank"></i>
-      <i class="fa fa-facebook" aria-hidden="true" class="fa-2x" target="_blank"></i>
-      <i class="fa fa-instagram" aria-hidden="true" class="fa-2x" target="_blank"></i>
+      <i class="fa fa-twitter fa stack-2x" class="fa-2x" target="_blank"></i>
+      <i class="fa fa-facebook" class="fa-2x" target="_blank"></i>
+      <i class="fa fa-instagram" class="fa-2x" target="_blank"></i>
       <p>Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
     </div>
 
