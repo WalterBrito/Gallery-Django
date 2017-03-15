@@ -1,0 +1,12 @@
+/*About CSS*/
+
+.about {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 15px;
+  text-align: justify;
+  float: left;
+  margin: 8%;
+  padding: 1%;
+  display: inline-block;
+  border: 1px;
+}
