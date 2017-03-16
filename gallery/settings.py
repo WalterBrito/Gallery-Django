@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'gallery_app',
     'fontawesome',
     'sass_processor',
+    'sass',
+    # 'django_scss',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +129,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, '../static')
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'django_scss.finders.SCSSFinder',
+)

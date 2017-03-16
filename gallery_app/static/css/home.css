@@ -1,0 +1,349 @@
+/*Home CSS*/
+
+/*Title Lorem Ispum 1*/
+#title1 h1{
+  text-align: center;;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 50px;
+}
+
+#title1 p {
+  text-align: justify;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 23px;
+  padding-top: -20px;
+  padding-bottom: 20px;
+  padding-right: 75px;
+  padding-left: -75px;
+  margin-top: 5px;
+  margin-left: 105px;
+  margin-right: 105px;
+  width: 90%;
+  display: inline-block;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  .div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  .div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .div.pic {
+      margin: 80px;
+      border: 1px solid #ccc;
+      width: 500px;
+      display: inline-block;
+      position: relative;
+  }
+
+  div.pic:hover {
+      border: 1px solid #777;
+  }
+
+  div.pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.text {
+      padding: 15px;
+      text-align: justify;
+      font-family: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+  }
+}
