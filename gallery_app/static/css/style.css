@@ -1,7 +1,72 @@
-/*Home CSS*/
+@import "font-awesome";
 
+/*body*/
+html, body {
+   background: -o-linear-gradient(#e3f2fd, #bbdefb, #82b1ff);
+   background: -moz-linear-gradient(#e3f2fd, #bbdefb, #82b1ff);
+   background: -webkit-linear-gradient(#e3f2fd, #bbdefb, #82b1ff);
+   background: linear-gradient(#e3f2fd, #bbdefb, #82b1ff);
+   background-attachment: fixed;
+   height: 100%;
+ }
+
+ /*Navbar / Barra superior*/
+ul {
+  font-family: "Times New Roman", Georgia, Serif;
+  display: inline-block;
+  float: none !important;
+  font-size: 20px;
+}
+
+/*Center the menu button*/
+.container-fluid {
+  text-align: center;
+}
+
+ /*menu button*/
+.button {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+  padding: 5px 35px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #cfd8dc;
+  color: #111111;
+  border: none;
+  border-radius: 250px;
+  transform: translateY(4px);
+}
+
+ /*Hover the menu*/
+.button:hover {
+  background-color: #ff4081;
+  color: #FFFFFF;
+}
+
+/*Change menu text color*/
+.button a {
+  color: #111111;
+}
+
+/*Change text color of the menu hover*/
+.button:hover a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+ /*Carousel / Slideshow*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
+/*Home CSS*/
 /*Title Lorem Ispum 1*/
-.title1 h1{
+.title1 h1 {
   text-align: center;;
   font-family: "Times New Roman", Georgia, Serif;
   font-size: 25px;
@@ -346,4 +411,127 @@ and (orientation : portrait) {
       font-family: "Times New Roman", Georgia, Serif;
       font-size: 18px;
   }
+}
+
+/*Gallery CSS*/
+
+ /*Gallery images / Galeria de images*/
+div.gallery {
+    margin: 80px;
+    border: 1px solid #ccc;
+    width: 500px;
+    display: inline-block;
+    position: relative;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: justify;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 18px;
+}
+
+/*Contact CSS*/
+
+/*Contact*/
+h3 {
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+/*Text up the form field*/
+label {
+  margin-left: 8px;
+}
+
+/*Form field*/
+.contact input[type=text], select {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    font-family: "Times New Roman", Georgia, Serif;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    margin-left: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #cfd8dc;
+    color: #111111;
+}
+
+.contact input[type=text]:focus, select {
+  width: 90%;
+}
+
+.contact input[id=country], select {
+  width: 25%;
+  margin-left: 8px;
+}
+
+.contact input[type=submit] {
+    width: auto;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    margin-bottom: 90px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*About CSS*/
+
+.about {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 15px;
+  text-align: justify;
+  float: left;
+  margin: 8%;
+  padding: 1%;
+  display: inline-block;
+  border: 1px;
+}
+
+ /*footer / rodapé*/
+.footer {
+  background-color: #263238;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 15px;
+  height: 180px;
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+  bottom: 0;
+  clear: both;
+}
+
+/*footer text / texto do rodapé*/
+.footer p {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 25px;
+  bottom: 0;
 }
