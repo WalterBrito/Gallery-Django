@@ -1,27 +1,27 @@
 {% load staticfiles %}
+{% load static %}
 {% load fontawesome %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>{% block title %}Gallery{% endblock %}</title>
-    <!-- <title>Gallery</title> -->
     {% block meta-head %}
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% endblock %}
+    {% endblock meta-head %}
 
     {% block head-javascript %}
       <script src="https://use.fontawesome.com/684da3bcd8.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    {% endblock %}
+    {% endblock head-javascript %}
 
     {% block head-css %}
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
       <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
+    {% endblock head-css %}
   </head>
 
   <body>
@@ -46,14 +46,20 @@
     </div>
    </div>
    {% block content %}
-   {% endblock %}
+   {% endblock content %}
 
-    <div class="footer">
-      <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-square-o fa-2x"></i></a>
-      <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-square-o fa-2x" target="_blank"></i></a>
-      <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-square-o fa-2x" target="_blank"></i></a>
-      <p>Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
-    </div>
+   <div class="footer">
+     <a href="https://www.twitter.com" target="_blank">
+       <i class="fa fa-twitter fa-square-o fa-2x"></i>
+     </a>"{{ a|ljust:"10" }}"
+     <a href="https://www.facebook.com" target="_blank">
+       <i class="fa fa-facebook fa-square-o fa-2x" target="_blank"></i>
+     </a>"{{ a|center:"0" }}"
+     <a href="https://www.instagram.com" target="_blank">
+       <i class="fa fa-instagram fa-square-o fa-2x" target="_blank"></i>
+     </a>"{{ a|rjust:"10" }}"
+     <p>Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
+   </div>
 
   </body>
 </html>
